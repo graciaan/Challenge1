@@ -20,9 +20,9 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
+.header h1 span {
     color: #d9dcd6;
-}
+}/*removed the seo class tag and added the span tag*/
 
 .header nav {
     padding-top: 15px;
@@ -30,16 +30,16 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
+} /*changed tag in HTML from div to nav, changed css tag here to reflect that*/
 
 .header nav ul {
     list-style-type: none;
-}
+}/*changed tag in HTML from div to nav, changed css tag here to reflect that*/
 
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
-}
+}/*changed tag in HTML from div to nav, changed css tag here to reflect that*/
 
 a {
     color: #ffffff;
@@ -75,6 +75,24 @@ p {
     margin-left: 20px;
 }
 
+.content div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+} /*consolidated the individual content classes in to one*/
+
+.content img {
+    max-height: 200px;
+} /*consolidated the individual content img classes in to one*/
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}/*consolidated the individual content h2 classes in to one*/
+
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,108 +103,21 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
+.benefits div {
     margin-bottom: 32px;
     color: #ffffff;
-}
+} /*consolidated all of the extra benefit classes in to the sole "benefits" class as it will affect everything under the parent tag*/
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
-}
+} /*consolidated all of the benefit h3 classes to one class after cleaning up the extra parent tags*/
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+}/*consolidated all of the benefit img classes to one class after cleaning up the extra parent tags*/
 
 .footer {
     padding: 30px;
